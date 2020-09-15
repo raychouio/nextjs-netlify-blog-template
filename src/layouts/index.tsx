@@ -27,7 +27,7 @@ export default function Index({
   date,
   slug,
   author,
-  tags,
+  tags = [],
   description,
 }: Props) {
   const keywords = tags.map((it) => getTag(it).name);
